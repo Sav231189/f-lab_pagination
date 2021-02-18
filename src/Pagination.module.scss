@@ -1,0 +1,62 @@
+$borderItem: rgba(53, 45, 67, 0.43);
+
+.Pagination {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  font-family: sans-serif;
+  font-size: 120% !important;
+  & div{
+    cursor: pointer;
+    &::selection {
+      background-color: transparent;
+    }
+  }
+  .pagesBox {
+    margin-right: 1px;
+    display: flex;
+    border: $borderItem solid 1px;
+    border-right: none;
+    .pageNumber {
+      padding: 10px 12px;
+      border-right: $borderItem solid 1px;
+      &:hover {
+        background-color: rgba(53, 45, 67, 0.23);
+      }
+    }
+    .pageNumber.active {
+      font-weight: bold;
+      color: black;
+    }
+    .ellipsisFirstBtn, .ellipsisLastBtn {
+      padding: 10px;
+      border-right: $borderItem solid 1px;
+      &:hover {
+        background-color: rgba(53, 45, 67, 0.23);
+      }
+    }
+  }
+
+  .firstPageBtn, .prevPageBtn,
+  .nextPageBtn, .lastPageBtn {
+    margin-right: 1px;
+    padding: 10px 12px;
+    background-color: #352d43;
+    border: $borderItem solid 1px;
+    color: white;
+    &:hover {
+      border: transparent solid 1px;
+      background-color: rgba(53, 45, 67, 0.65);
+    }
+  }
+  .firstPageBtn.disabled, .prevPageBtn.disabled,
+  .nextPageBtn.disabled, .lastPageBtn.disabled {
+    &:hover {
+      background-color: #352d43;
+    }
+  }
+  .prevPageBtn, .nextPageBtn {
+    padding: 10px 14px ;
+  }
+}

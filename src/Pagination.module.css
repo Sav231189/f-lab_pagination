@@ -1,0 +1,60 @@
+.Pagination {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  font-family: sans-serif;
+  font-size: 120% !important;
+}
+.Pagination div {
+  cursor: pointer;
+}
+.Pagination div::selection {
+  background-color: transparent;
+}
+.Pagination .pagesBox {
+  margin-right: 1px;
+  display: flex;
+  border: rgba(53, 45, 67, 0.43) solid 1px;
+  border-right: none;
+}
+.Pagination .pagesBox .pageNumber {
+  padding: 10px 12px;
+  border-right: rgba(53, 45, 67, 0.43) solid 1px;
+}
+.Pagination .pagesBox .pageNumber:hover {
+  background-color: rgba(53, 45, 67, 0.23);
+}
+.Pagination .pagesBox .pageNumber.active {
+  font-weight: bold;
+  color: black;
+}
+.Pagination .pagesBox .ellipsisFirstBtn, .Pagination .pagesBox .ellipsisLastBtn {
+  padding: 10px;
+  border-right: rgba(53, 45, 67, 0.43) solid 1px;
+}
+.Pagination .pagesBox .ellipsisFirstBtn:hover, .Pagination .pagesBox .ellipsisLastBtn:hover {
+  background-color: rgba(53, 45, 67, 0.23);
+}
+.Pagination .firstPageBtn, .Pagination .prevPageBtn,
+.Pagination .nextPageBtn, .Pagination .lastPageBtn {
+  margin-right: 1px;
+  padding: 10px 12px;
+  background-color: #352d43;
+  border: rgba(53, 45, 67, 0.43) solid 1px;
+  color: white;
+}
+.Pagination .firstPageBtn:hover, .Pagination .prevPageBtn:hover,
+.Pagination .nextPageBtn:hover, .Pagination .lastPageBtn:hover {
+  border: transparent solid 1px;
+  background-color: rgba(53, 45, 67, 0.65);
+}
+.Pagination .firstPageBtn.disabled:hover, .Pagination .prevPageBtn.disabled:hover,
+.Pagination .nextPageBtn.disabled:hover, .Pagination .lastPageBtn.disabled:hover {
+  background-color: #352d43;
+}
+.Pagination .prevPageBtn, .Pagination .nextPageBtn {
+  padding: 10px 14px;
+}
+
+/*# sourceMappingURL=Pagination.module.css.map */
